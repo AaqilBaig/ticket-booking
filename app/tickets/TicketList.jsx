@@ -1,5 +1,5 @@
 async function getTickets() {
-    const res = await fetch('http://localhost:4000/tickets', {
+    const res = await fetch('https://ticket-booking-4vn9.onrender.com/tickets', {
         next: {
             revalidate: 0
         }
