@@ -5,7 +5,7 @@ async function getTickets() {
 
     const res = await fetch('https://ticket-booking-4vn9.onrender.com/tickets', {
       signal: controller.signal,
-      next: { revalidate: 0 },
+      next: { revalidate: 30 },
       headers: {
         'Accept': 'application/json'
       }
